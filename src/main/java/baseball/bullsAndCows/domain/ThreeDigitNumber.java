@@ -42,11 +42,11 @@ public class ThreeDigitNumber {
                 , parsedThreeDigitNumber.get(1)
                 , parsedThreeDigitNumber.get(2));
 
-        int thirdDigit = parsedThreeDigitNumber.get(0) * 100;
+        int firstDigit = parsedThreeDigitNumber.get(0) * 100;
         int secondDigit = parsedThreeDigitNumber.get(1) * 10;
-        int firstDigit = parsedThreeDigitNumber.get(2);
+        int thirdDigit = parsedThreeDigitNumber.get(2);
 
-        return thirdDigit + secondDigit + firstDigit;
+        return firstDigit + secondDigit + thirdDigit;
     }
 
     private void checkIfNumbersSame(final int first, final int second, final int third) {

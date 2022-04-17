@@ -19,7 +19,7 @@ public class PositiveNumber {
         }
     }
 
-    private void validatePositive(int number) {
+    private void validatePositive(final int number) {
         if (number < 1 || number > 10) {
             throw new IllegalArgumentException("1부터 9까지 숫자만 사용할 수 있습니다.");
         }
